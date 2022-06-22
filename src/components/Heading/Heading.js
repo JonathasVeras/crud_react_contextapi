@@ -11,9 +11,9 @@ import {
 export const Heading = () => {
   return (
     <Navbar color="dark" dark>
-        <Container className='d-flex'>
+        <Container className={style.container1}>
             <NavbarBrand href='/' className={style.navbarBrand}>Meu time</NavbarBrand>
-            <Nav className='ml-5'>
+            <Nav>
                 <NavItem>
                     <Link className='btn btn-primary' to="/add">Add usuário</Link>
                 </NavItem>
