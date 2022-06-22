@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import style from "./style.module.scss";
 import {
     Navbar,
     Nav,
@@ -11,7 +12,7 @@ export const Heading = () => {
   return (
     <Navbar color="dark" dark>
         <Container className='d-flex'>
-            <NavbarBrand href='/'>Meu time</NavbarBrand>
+            <NavbarBrand href='/' className={style.navbarBrand}>Meu time</NavbarBrand>
             <Nav className='ml-5'>
                 <NavItem>
                     <Link className='btn btn-primary' to="/add">Add usuário</Link>

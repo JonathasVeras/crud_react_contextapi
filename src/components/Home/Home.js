@@ -1,6 +1,6 @@
 import React from 'react';
-import {Heading} from './Heading';
-import {UserList} from './UserList';
+import {Heading} from '../Heading/Heading';
+import {UserList} from '../UserList/UserList';
 export const Home = () => {
   return (
     <>
