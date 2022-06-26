@@ -14,7 +14,7 @@ export const Heading = () => {
         <Container className={style.container1}>
             <NavbarBrand href='/' className={style.navbarBrand}>Meu time</NavbarBrand>
             <Nav>
-                <NavItem>
+                <NavItem className={style.buttonAdd}>
                     <Link className='btn btn-primary' to="/add">Add usuário</Link>
                 </NavItem>
             </Nav>
