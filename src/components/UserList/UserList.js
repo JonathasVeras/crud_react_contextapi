@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 
 export const UserList = () => {
-    const {users} = useContext(GlobalContext);
+    const {users, removeUser} = useContext(GlobalContext);
     console.log(users);
   return (
     <ListGroup className='mt-4'>
@@ -17,8 +17,8 @@ export const UserList = () => {
             <ListGroupItem className='d-flex'>
                 <strong>{user.name}</strong>
                 <div className='ml-auto'>
-                    <Button className={style.buttonEdit} variant="warning"><Link to='/edit/1'>Editar</Link></Button>
-                    <Button variant='danger'>Deletar</Button>
+                    <Button className={style.buttonEdit} variant="warning"><Link to={`/edit/${user.id}`}>Editar</Link></Button>
+                    <Button onClick={()=>removeUser(user.id)} variant='danger'>Deletar</Button>
                 </div>
             </ListGroupItem>
         ))}
